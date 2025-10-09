@@ -1,0 +1,13 @@
+model_list:
+  - model_name: claude
+    litellm_params:
+      model: anthropic/claude-sonnet-4-5-20250929
+      api_key: os.environ/ANTHROPIC_API_KEY
+
+general_settings:
+  master_key: sk-1234
+  
+litellm_settings:
+  request_timeout: 600
+  set_verbose: False
+  json_logs: true
